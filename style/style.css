@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  pointer-events: none;
+}
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -213,4 +217,11 @@ a {
 .right__item-text_remove {
   text-decoration: line-through;
   color: #9a9a9a;
+}
+.right__total {
+  padding-left: 100px;
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 81px;
 }/*# sourceMappingURL=style.css.map */

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <script defer src="./app/app.js"></script>
+    <script defer src="./app/weather.js"></script>
     <title>My day</title>
 </head>
 <body>
@@ -37,92 +38,30 @@
                 <div id="tab-1" data-tab-content class="right__tasks">
                     <div class="right__form">
                         <input id="form-tasks" placeholder="Добавить в список" type="text" class="right__input">
-                        <button class="right__btn"><img src="./img/plus.png"></button>
+                        <button id="tasks-btn" class="right__btn"><img src="./img/plus.png"></button>
                     </div>
                     <div class="right__title">Список дел</div>
                     <ul id="tasks-list" class="right__list">
-                        <li class="right__item">
-                            <div class="right__item-remove">
-                                <img src="./img/remove.png">
-                            </div>
-                            <div class="right__item-check"></div>
-                            <div class="right__item-text">Картофель</div>
-                        </li>
-                        <li class="right__item">
-                            <div class="right__item-remove">
-                                <img src="./img/remove.png">
-                            </div>
-                            <div class="right__item-check"></div>
-                            <div class="right__item-text">Картофель</div>
-                        </li>
-                        <li class="right__item">
-                            <div class="right__item-remove">
-                                <img src="./img/remove.png">
-                            </div>
-                            <div class="right__item-check right__item-check_active"></div>
-                            <div class="right__item-text right__item-text_remove">Картофель</div>
-                        </li>
                     </ul>
                 </div>
                 <div id="tab-2" data-tab-content class="right__goods right__hidden">
                     <div class="right__form">
                         <input id="form-goods" placeholder="Добавить в список" type="text" class="right__input">
-                        <button class="right__btn"><img src="./img/plus.png"></button>
+                        <button id="goods-btn" class="right__btn"><img src="./img/plus.png"></button>
                     </div>
                     <div class="right__title">Список покупок</div>
-                    <ul id="goods-list" class="right__list">
-                        <li class="right__item">
-                            <div class="right__item-remove">
-                                <img src="./img/remove.png">
-                            </div>
-                            <div class="right__item-check"></div>
-                            <div class="right__item-text">Картофель</div>
-                        </li>
-                        <li class="right__item">
-                            <div class="right__item-remove">
-                                <img src="./img/remove.png">
-                            </div>
-                            <div class="right__item-check"></div>
-                            <div class="right__item-text">Картофель</div>
-                        </li>
-                        <li class="right__item">
-                            <div class="right__item-remove">
-                                <img src="./img/remove.png">
-                            </div>
-                            <div class="right__item-check right__item-check_active"></div>
-                            <div class="right__item-text right__item-text_remove">Картофель</div>
-                        </li>
+                    <ul id="goods-list" class="right__list">                       
                     </ul>
                 </div>
                 <div id="tab-3" data-tab-content class="right__costs right__hidden">
                     <div class="right__form">
                         <input id="form-costs" placeholder="Добавить в список" type="text" class="right__input">
-                        <button class="right__btn"><img src="./img/plus.png"></button>
+                        <button id="costs-btn" class="right__btn"><img src="./img/plus.png"></button>
                     </div>
                     <div class="right__title">Список расходов</div>
                     <ul id="costs-list" class="right__list">
-                        <li class="right__item">
-                            <div class="right__item-remove">
-                                <img src="./img/remove.png">
-                            </div>
-                            <div class="right__item-check"></div>
-                            <div class="right__item-text right__item-text_number">1800</div>
-                        </li>
-                        <li class="right__item">
-                            <div class="right__item-remove">
-                                <img src="./img/remove.png">
-                            </div>
-                            <div class="right__item-check"></div>
-                            <div class="right__item-text right__item-text_number">3600</div>
-                        </li>
-                        <li class="right__item">
-                            <div class="right__item-remove">
-                                <img src="./img/remove.png">
-                            </div>
-                            <div class="right__item-check  right__item-check_active"></div>
-                            <div class="right__item-text right__item-text_number right__item-text_remove">970</div>
-                        </li>
                     </ul>
+                    <div class="right__total">Итого: <span class="right__total_number" >0</span> руб.</div>
                 </div>
             </div>
         </section>
