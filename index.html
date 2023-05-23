@@ -4,9 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./app/app.js"></script>
     <title>My day</title>
 </head>
 <body>
+    <header class="header center">
+        <a href="./index.html" class="header__logo"><img src="./img/logo.png"></a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li id="tasks" data-tab="tab-1" class="nav__item nav__item_active">Дела</li>
+                <li id="goods" data-tab="tab-2" class="nav__item">Покупки</li>
+                <li id="costs" data-tab="tab-3" class="nav__item">Расходы</li>
+            </ul>
+        </nav>
+    </header> 
+    <main class="main center">
+        <section class="content">
+            <div class="left">
+                <div class="left__wrapper">
+                    <div class="left__wrapper-time">13:53</div>
+                    <div class="left__wrapper-day">Понедельник</div>
+                    <div class="left__wrapper-info">
+                        <img src="./img/thermometer.png" alt="" class="left__wrapper-img">
+                        <div class="left__wrapper-temperature">25 °С</div>
+                    </div>
+                    <img src="./img/sun.png" class="left__wrapper-sun left__wrapper-sun_anim">
+                    <img src="./img/sun-center.png" class="left__wrapper-sun">
+                </div>
+            </div>
+            <div class="right">
+                <div id="tab-1" data-tab-content class="right__tasks">
+                    <div class="right__form">
+                        <input id="form-tasks" placeholder="Добавить в список" type="text" class="right__input">
+                        <button class="right__btn"><img src="./img/plus.png"></button>
+                    </div>
+                    <div class="right__title">Список дел</div>
+                    <ul id="tasks-list" class="right__list">
+                        <li class="right__item">
+                            <div class="right__item-remove">
+                                <img src="./img/remove.png">
+                            </div>
+                            <div class="right__item-check"></div>
+                            <div class="right__item-text">Картофель</div>
+                        </li>
+                        <li class="right__item">
+                            <div class="right__item-remove">
+                                <img src="./img/remove.png">
+                            </div>
+                            <div class="right__item-check"></div>
+                            <div class="right__item-text">Картофель</div>
+                        </li>
+                        <li class="right__item">
+                            <div class="right__item-remove">
+                                <img src="./img/remove.png">
+                            </div>
+                            <div class="right__item-check right__item-check_active"></div>
+                            <div class="right__item-text right__item-text_remove">Картофель</div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tab-2" data-tab-content class="right__goods right__hidden">
+                    <div class="right__form">
+                        <input id="form-goods" placeholder="Добавить в список" type="text" class="right__input">
+                        <button class="right__btn"><img src="./img/plus.png"></button>
+                    </div>
+                    <div class="right__title">Список покупок</div>
+                    <ul id="goods-list" class="right__list">
+                        <li class="right__item">
+                            <div class="right__item-remove">
+                                <img src="./img/remove.png">
+                            </div>
+                            <div class="right__item-check"></div>
+                            <div class="right__item-text">Картофель</div>
+                        </li>
+                        <li class="right__item">
+                            <div class="right__item-remove">
+                                <img src="./img/remove.png">
+                            </div>
+                            <div class="right__item-check"></div>
+                            <div class="right__item-text">Картофель</div>
+                        </li>
+                        <li class="right__item">
+                            <div class="right__item-remove">
+                                <img src="./img/remove.png">
+                            </div>
+                            <div class="right__item-check right__item-check_active"></div>
+                            <div class="right__item-text right__item-text_remove">Картофель</div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tab-3" data-tab-content class="right__costs right__hidden">
+                    <div class="right__form">
+                        <input id="form-costs" placeholder="Добавить в список" type="text" class="right__input">
+                        <button class="right__btn"><img src="./img/plus.png"></button>
+                    </div>
+                    <div class="right__title">Список расходов</div>
+                    <ul id="costs-list" class="right__list">
+                        <li class="right__item">
+                            <div class="right__item-remove">
+                                <img src="./img/remove.png">
+                            </div>
+                            <div class="right__item-check"></div>
+                            <div class="right__item-text right__item-text_number">1800</div>
+                        </li>
+                        <li class="right__item">
+                            <div class="right__item-remove">
+                                <img src="./img/remove.png">
+                            </div>
+                            <div class="right__item-check"></div>
+                            <div class="right__item-text right__item-text_number">3600</div>
+                        </li>
+                        <li class="right__item">
+                            <div class="right__item-remove">
+                                <img src="./img/remove.png">
+                            </div>
+                            <div class="right__item-check  right__item-check_active"></div>
+                            <div class="right__item-text right__item-text_number right__item-text_remove">970</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
