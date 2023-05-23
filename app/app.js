@@ -11,7 +11,7 @@ function sunAnimations () {
       let timePassed = Date.now() - start;
     
       if (timePassed >= Infinity) {
-        clearInterval(timer); // закончить анимацию через 2 секунды
+        clearInterval(timer);
         return;
       }
     
