@@ -54,10 +54,10 @@ tasksBtn.addEventListener('click', function(){
     const textTask = tasksForm.value
     const htmlTasks = `    
     <li class="right__item">
-        <a class="right__item-remove">
+        <button class="right__item-remove">
             <img src="./img/remove.png">
-        </a>
-        <a data-check='check' class="right__item-check"></a>
+        </button>
+        <button data-check='check' class="right__item-check"></button>
         <div data-text='text' class="right__item-text">${textTask}</div>
     </li>
     `
@@ -79,10 +79,10 @@ goodsBtn.addEventListener('click', function(){
     const textTask = goodsForm.value
     const htmlTasks = `    
     <li class="right__item">
-        <a class="right__item-remove">
+        <button class="right__item-remove">
             <img src="./img/remove.png">
-        </a>
-        <a data-check='check' class="right__item-check"></a>
+        </button>
+        <button data-check='check' class="right__item-check"></button>
         <div data-text='text' class="right__item-text">${textTask}</div>
     </li>
     `
@@ -104,9 +104,9 @@ costsBtn.addEventListener('click',function(){
     const textTask = costsForm.value
     const htmlTasks = `    
     <li class="right__item">
-        <a class="right__item-remove">
+        <button class="right__item-remove">
             <img src="./img/remove.png">
-        </a>
+        </button>
         <div class="right__item-text right__item-text_number">${textTask}</div>
     </li>
     `
