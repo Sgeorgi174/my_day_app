@@ -195,6 +195,7 @@ img {
         align-items: center;
 
         &-remove {
+            display: block;
             width: 41px;
             height: 41px;
             background-color: #fff;
@@ -211,6 +212,7 @@ img {
         }
 
         &-check {
+            display: block;
             width: 41px;
             height: 41px;
             background-color: #fff;
