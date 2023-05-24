@@ -144,7 +144,7 @@ window.addEventListener('click', function(event){
         event.target.classList.toggle('right__item-check_active')
         const taskBox = event.target.closest('.right__item')
         const taskText = taskBox.querySelector('[data-text]')
-        taskText.classList.toggle('right__item-text_remove')
+        taskText.classList.add('right__item-text_remove')
     }
 })
 
