@@ -141,7 +141,7 @@ window.addEventListener('click', function(event){
 //Дейсвие кнопки выполнено 
 window.addEventListener('click', function(event){     
     if (event.target.dataset.check == 'check') {
-        event.target.classList.toggle('right__item-check_active')
+        event.target.classList.add('right__item-check_active')
         const taskBox = event.target.closest('.right__item')
         const taskText = taskBox.querySelector('[data-text]')
         taskText.classList.add('right__item-text_remove')
